@@ -1,0 +1,73 @@
+.Main {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.task {
+    display: flex;
+}
+
+.main-img {
+    height: 500px;
+    width: 500px;
+}
+
+.creation,
+.inven {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+
+.parraf {
+    width: 100%;
+    max-width: 300px;
+    margin-left: 18%;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 16px;
+}
+
+.spa {
+    padding: 0px 250px 0px 0px;
+}
+
+.descrip {
+    background: #3980c0;
+    border-radius: 10px;
+    margin: 0px;
+    height: auto;
+    padding: 10px;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+    max-width: auto;
+}
+
+.cre, .inventary {
+    border-radius: 10px;
+    max-width: 300px; /* Limita el ancho máximo del contenedor */
+    width: 100%; /* Asegura que use todo el espacio disponible */
+    word-wrap: break-word; /* Corta palabras largas */
+    white-space: normal; /* Permite saltos de línea */
+    overflow-wrap: break-word; /* Evita desbordes */
+}
+
+.btn {
+    color: black;
+    width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+    padding: 10px;
+    max-width: 300px; /* Establece un ancho máximo fijo para evitar que el botón se ensanche demasiado */
+}
