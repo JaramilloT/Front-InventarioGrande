@@ -1,0 +1,83 @@
+.session{
+    background-image: url("../../assets/fondo.png");
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-size: cover; /* Ajusta la imagen para que cubra toda la pantalla */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.previous{
+    height: 50px;
+}
+
+.return{
+    display: flex;
+    align-items: center;
+    margin-right: 450px;
+}
+
+.vol{
+    padding: 0px 0px 0px 18px;
+    font-size: 25px;
+}
+
+.cp{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 15px;
+    width: 30%;
+    padding: 20px;
+    align-items: center;
+    background: #011b3e;
+}
+
+.email{
+    padding: 40px;
+}
+
+.password{
+    padding: 40px;
+}
+
+.input{
+    display: flex;
+    padding: 10px 183px 10px 7px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.ep{
+    color: white;
+    font-size: 20px;
+    padding: 20px 0px;
+}
+
+.class{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ci{
+    color: white;
+    width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+    padding: 10px;
+    max-width: 300px; 
+    border-radius: 15px;
+}
+
+.space{
+    padding: 0px 50px;
+}
+
+p{
+    color: white;
+}

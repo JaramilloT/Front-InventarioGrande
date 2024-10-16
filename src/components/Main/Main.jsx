@@ -18,7 +18,9 @@ export const Main = () => {
         ingresar detalles como el nombre del producto,
         la cantidad disponible, el costo de adquisición, 
         el precio de venta, y cualquier otra información relevante, 
-        como la ubicación o categoría del ítem.</p>
+        como la ubicación o categoría del ítem. dar
+        Crear
+        </p>
       <br />
       </div>
       <button className='cre'><a className='btn' href="crear"><p className='pr'>Crear</p></a></button>

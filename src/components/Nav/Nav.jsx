@@ -11,11 +11,14 @@ export const Nav = () => {
             <div className='links'>
                     <div className='seccion'>
                 <a className='a' href="./Inicio">Inicio</a>
-                <a className='a'  href="../Inventory/Inventory">Inventario</a>
+                
                     </div>
         </div>
+        <button className='sesion_b'>
+
                 <a className='i' href="../Sesion/Sesion">Iniciar sección</a>
        
+        </button>
     </div>
   )
 }

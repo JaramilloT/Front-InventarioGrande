@@ -3,14 +3,10 @@
     display: flex;
     margin: 20px 150px 0px 150px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     border-radius: 15px;
 }
 
-.manage{
-    margin-left: -150px;
-  
-}
 
 .links{
     display: flex;
@@ -21,13 +17,23 @@
 }
 
 .a{
-    padding: 0px 130px 0px;
+    padding: 0px 130px 0px 235px;
     font-size: 20px;
+}
+
+.sesion_b{
+    color: white;
+    width: 12%;
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+    padding: 10px;
+    max-width: 300px; 
+    border-radius: 15px;
 }
 
 .i{
     font-size: 20px;
-
 }
 
 a{

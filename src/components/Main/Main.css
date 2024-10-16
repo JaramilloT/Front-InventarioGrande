@@ -42,32 +42,42 @@
 
 .descrip {
     background: #3980c0;
-    border-radius: 10px;
+    border-radius: 7px;
     margin: 0px;
-    height: auto;
     padding: 10px;
     white-space: normal;
-    word-wrap: break-word;
     overflow-wrap: break-word;
     text-align: center;
-    max-width: auto;
 }
 
 .cre, .inventary {
-    border-radius: 10px;
+    border-radius: 15px;
     max-width: 300px; /* Limita el ancho máximo del contenedor */
-    width: 100%; /* Asegura que use todo el espacio disponible */
-    word-wrap: break-word; /* Corta palabras largas */
-    white-space: normal; /* Permite saltos de línea */
+    width: 100%; 
+    white-space: normal; 
     overflow-wrap: break-word; /* Evita desbordes */
+    
+}
+
+button {
+    background-color: #aac93e;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+button:hover {
+    background-color: #aac93e; /* Cambia el color de fondo de manera suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .btn {
-    color: black;
+    color: white;
     width: 100%;
     white-space: normal;
     word-wrap: break-word;
     text-align: center;
     padding: 10px;
-    max-width: 300px; /* Establece un ancho máximo fijo para evitar que el botón se ensanche demasiado */
+    max-width: 300px; 
 }
