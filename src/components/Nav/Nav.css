@@ -7,6 +7,9 @@
     border-radius: 15px;
 }
 
+.welcome-message{
+    color: white;
+}
 
 .links{
     display: flex;
@@ -23,7 +26,6 @@
 
 .sesion_b{
     color: white;
-    width: 12%;
     white-space: normal;
     word-wrap: break-word;
     text-align: center;
@@ -36,8 +38,28 @@
     font-size: 20px;
 }
 
+.sesion_b, .logout_b {
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+  
+  .user-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .welcome-message {
+    font-weight: bold;
+  }
+
 a{
     text-decoration: none;
     color: white;
-   
 }
+

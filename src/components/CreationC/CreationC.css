@@ -1,0 +1,83 @@
+.creations{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+
+.fondo-se{
+    width: 100%;
+    height: 100vh;
+}
+
+.img-cre{
+    height: 100%;
+    width: 60%;
+}
+
+.previous-cre{
+    width: 50px;
+    height: 50px;
+}
+
+.return-cre{
+    display: flex;
+    align-items: center;
+    margin-right: 450px;
+}
+
+/* .vol-cre{
+    padding: 0px 0px 0px 18px;
+    font-size: 25px;
+} */
+
+.cp-cre{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 20px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ep-cre{
+    font-size: 20px;
+    padding: 20px 0px;
+}
+
+.class-cre{
+    display: flex;
+    justify-content: space-around;
+}
+
+.vol-cre{
+    padding: 0px 10px 0px 20px;
+    font-size: 20px;
+}
+
+.passwords{
+    padding: 0px 0px 35px;
+}
+
+.ci-cre{
+    color: black;
+    background: #4192fb;
+    border-radius: 5px;
+    width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+    padding: 15px;
+    max-width: 300px; 
+   
+}
+
+.ci-cre:hover{
+    background-color: #343434; /* Cambia el color de fondo de manera suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
