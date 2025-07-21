@@ -1,65 +1,90 @@
-.Nav{
-    background-color: #3980c0;
-    display: flex;
-    margin: 20px 150px 0px 150px;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 15px;
+/* ───────────── NAV BAR GENERAL ───────────── */
+.Nav {
+  height: 6rem;
+  margin: 20px 150px 0px 150px;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3980c0;
+  border-radius: 10px;
 }
 
-.welcome-message{
-    color: white;
+/* ───────────── LOGO ───────────── */
+.logo .emca {
+  height: 85px;
+  width: 85px;
+  border-radius: 40%;
+  transition: transform 0.3s ease;
 }
 
-.links{
-    display: flex;
+/* ───────────── LINKS ───────────── */
+.links {
+  display: flex;
+  gap: 2rem;
 }
 
-.seccion{
-    display: flex;
+.seccion a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #f9fafb;
+  transition: color 0.3s;
 }
 
-.a{
-    padding: 0px 130px 0px 235px;
-    font-size: 20px;
+.seccion a:hover {
+  color: #38bdf8; /* Celeste */
 }
 
-.sesion_b{
-    color: white;
-    white-space: normal;
-    word-wrap: break-word;
-    text-align: center;
-    padding: 10px;
-    max-width: 300px; 
-    border-radius: 15px;
+/* ───────────── USUARIO Y BOTONES ───────────── */
+.user-options {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.i{
-    font-size: 20px;
+.welcome-message {
+  font-size: 0.95rem;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
-.sesion_b, .logout_b {
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
+.logout_b,
+.sesion_b {
+  padding: 0.4rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #095866; 
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout_b:hover,
+.sesion_b:hover {
+  background-color: #18b4b9;
+}
+
+/* ───────────── RESPONSIVE ───────────── */
+@media screen and (max-width: 768px) {
+  .Nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    margin: 10px 1rem 0 1rem;
   }
-  
 
-  
+  .links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
   .user-options {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
   }
-  
-  .welcome-message {
-    font-weight: bold;
-  }
-
-a{
-    text-decoration: none;
-    color: white;
 }
-

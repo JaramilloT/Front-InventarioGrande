@@ -1,5 +1,4 @@
 import React from 'react';
-import { Logo } from '../Logos/Logo';
 import { Link } from 'react-router-dom';
 import { useFromContext } from '../../context/FromContext';
 import './Nav.css';
@@ -9,12 +8,15 @@ export const Nav = () => {
 
   return (
     <div className='Nav'>
-      <div className='manage'>
-        <Logo />
+      <div className='logo'>
+        <Link to='/home'>
+          <img src={require('../../assets/emca.png')} alt='logo-emca' className='emca' />
+        </Link>
       </div>
+     
       <div className='links'>
         <div className='seccion'>
-          <Link to='/home'>Inicio</Link>
+          <Link to='/home'>INICIO</Link>
         </div>
       </div>
 

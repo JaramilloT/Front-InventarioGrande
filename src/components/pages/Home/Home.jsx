@@ -13,7 +13,6 @@ export const Home = () => {
       <Header></Header>
       <Main></Main>
       <Footer></Footer>
-      {/* <Sesion></Sesion> */}
 
     </div>
   )
