@@ -130,8 +130,9 @@ export const Details = () => {
     <div className="details-container">
       <Nav />
       <h1>Detalles de los Registros</h1>
+      <p></p>
       <button className="report" onClick={handleReport}>
-        Descargar reporte
+        Descargar reporte completo  
       </button>
 
       <input

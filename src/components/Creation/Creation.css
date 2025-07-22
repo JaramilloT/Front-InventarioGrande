@@ -1,61 +1,90 @@
 .form {
-    width: 100%;
-    max-width: 500px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin: 160px 0px 0px 650px;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
 
-  .container_form h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-  }
+.container_form {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
 
-  .form-back{
-    display: flex;
-  }
+.form-back {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
-  .form-p{
-    padding: 6px 0px 0px 15px;
-    font-size: 20px;
-    color: black;
-    
-  }
-  .form-img{
-    width: 50px;
-  }
-  .container_form p {
-    text-align: left;
-    margin: 10px 0 5px;
-    color: #555;
-  }
+.form-img {
+  width: 40px;
+  height: 40px;
+}
 
-  .container_form select,
-  .container_form input {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-  }
+.form-p {
+  margin-left: 12px;
+  font-size: 18px;
+  color: #333;
+}
 
-  .container_form button {
-    width: 50%;
-    padding: 10px;
-    font-size: 16px;
-    color: white;
-    background: #4192fb;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
+.container_form h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2a2a2a;
+}
 
-  .container_form button:hover {
-    background: #0056b3;
-  }
+.container_form label {
+  display: block;
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.container_form select,
+.container_form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.container_form button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #4192fb;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.container_form button:hover {
+  background: #0056b3;
+}
+
+.message {
+  margin-top: 15px;
+  font-size: 14px;
+  color: red;
+  font-weight: 500;
+  text-align: center;
+}
+
+.access-denied {
+  margin: 150px auto;
+  text-align: center;
+  font-size: 18px;
+  color: #b91c1c;
+}

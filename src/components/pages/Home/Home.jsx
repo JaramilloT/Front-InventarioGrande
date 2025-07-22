@@ -2,7 +2,6 @@ import React from 'react'
 import { Nav } from '../../Nav/Nav'
 import { Header } from '../../Header/Header'
 import { Main } from '../../Main/Main'
-import { Footer } from '../../Footer/Footer'
 
 
 export const Home = () => {
@@ -12,7 +11,6 @@ export const Home = () => {
       <Nav></Nav>
       <Header></Header>
       <Main></Main>
-      <Footer></Footer>
 
     </div>
   )

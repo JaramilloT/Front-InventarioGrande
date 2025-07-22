@@ -1,25 +1,57 @@
 .details-container {
-  margin: 50px auto;
-  max-width: 1650px;
-  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 h1 {
   text-align: center;
-  color: #333;
-  margin: 35px;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.report {
+  background-color: #4192fb;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.report:hover {
+  background-color: #2b72d1;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin: 0 auto 20px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
 }
 
 .details-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
+  font-size: 0.95rem;
+  margin-top: 1rem;
 }
 
 .details-table th,
 .details-table td {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -33,52 +65,76 @@ h1 {
 }
 
 .details-table tr:hover {
-  background-color: #f1f1f1;
+  background-color: #eef5ff;
 }
 
 .edit-btn,
 .delete-btn,
 .save-btn,
 .cancel-btn {
-  padding: 5px 10px;
-  margin: 0 2px;
+  padding: 6px 12px;
+  margin: 2px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   color: white;
   cursor: pointer;
-}
-
-.report{
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 7px;
-}
-
-.search-bar{
-  margin: 10px;
-  width: 15%;
-  border-radius: 4px;
+  font-size: 0.85rem;
+  transition: background-color 0.3s ease;
 }
 
 .edit-btn {
-  background-color: #007bff;
+  background-color: #3498db;
 }
 
 .delete-btn {
-  background-color: #dc3545;
+  background-color: #e74c3c;
 }
 
 .save-btn {
-  background-color: #28a745;
+  background-color: #2ecc71;
 }
 
 .cancel-btn {
-  background-color: #6c757d;
+  background-color: #95a5a6;
 }
 
 .edit-btn:hover,
 .delete-btn:hover,
 .save-btn:hover,
 .cancel-btn:hover {
-  opacity: 0.8;
+  opacity: 0.85;
+}
+
+.message {
+  text-align: center;
+  color: green;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .details-table, .details-table thead, .details-table tbody, .details-table th, .details-table td, .details-table tr {
+    display: block;
+  }
+
+  .details-table tr {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .details-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .details-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+  }
 }

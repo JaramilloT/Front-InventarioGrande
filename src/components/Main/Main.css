@@ -1,83 +1,92 @@
+/* ===== Contenedor Principal ===== */
 .Main {
-    display: flex;
-    margin-top: 100px;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px 0;
 }
 
+/* ===== Contenedor Interno ===== */
 .task {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
 }
 
+/* ===== Tarjeta Estilo General ===== */
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== Imagen Principal ===== */
 .main-img {
-    height: 500px;
-    width: 500px;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
 }
 
-.creation,
-.inven {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid;
-    border-radius: 10px;
-    width: 50%;
-    height: auto;
-    text-align: center;
+/* ===== Zona Inferior Azul con Botón ===== */
+.descrip {
+  background: #3980c0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
 }
 
 .parraf {
-    width: 100%;
-    max-width: 300px;
-    margin-left: 18%;
-    letter-spacing: 1px;
-    color: white;
-    font-size: 16px;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
-.spa {
-    padding: 0px 250px 0px 0px;
+/* ===== Botón Verde ===== */
+.btn-action {
+  background-color: #aac93e;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.descrip {
-    background: #3980c0;
-    border-radius: 7px;
-    margin: 0px;
-    padding: 10px;
-    white-space: normal;
-    overflow-wrap: break-word;
-    text-align: center;
+.btn-action:hover {
+  background-color: #94b537;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.cre, .inventary {
-    border-radius: 15px;
-    max-width: 300px; /* Limita el ancho máximo del contenedor */
-    width: 100%; 
-    white-space: normal; 
-    overflow-wrap: break-word; /* Evita desbordes */
-    
-}
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .task {
+    flex-direction: column;
+    align-items: center;
+  }
 
-button {
-    background-color: #aac93e;
-    color: white;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
-}
-button:hover {
-    background-color: #aac93e; /* Cambia el color de fondo de manera suave */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
+  .card {
+    width: 90%;
+  }
 
-.btn {
-    color: white;
-    width: 100%;
-    white-space: normal;
-    word-wrap: break-word;
-    text-align: center;
-    padding: 10px;
-    max-width: 300px; 
+  .main-img {
+    height: 200px;
+  }
 }
