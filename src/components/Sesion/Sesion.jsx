@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import fondo from '../../assets/fondo-emca.jpg';
-import logo from '../../assets/Logo-Emca.jpeg'; // <-- Corrige esta ruta según tu estructura
+import logo from '../../assets/Logo-Emca.jpeg'; 
 import { useFromContext } from '../../context/FromContext';
 import './Sesion.css';
 
@@ -10,8 +10,6 @@ export const Sesion = () => {
   const [contraseña, setContraseña] = useState('');
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
-  const [verPassword, setVerPassword] = useState(false);
-
   const { login, user } = useFromContext();
   const navigate = useNavigate();
 
@@ -76,7 +74,7 @@ export const Sesion = () => {
             <div className="password-input">
               <input
                 className="input"
-                type={verPassword ? 'text' : 'password'}
+                type="password"
                 placeholder="*********"
                 value={contraseña}
                 onChange={(e) => setContraseña(e.target.value)}

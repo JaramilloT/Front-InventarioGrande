@@ -1,4 +1,3 @@
-import React from 'react'
 import emca from '../../assets/emca.png'
 import './Logo.css'
 export const Logo = () => {
