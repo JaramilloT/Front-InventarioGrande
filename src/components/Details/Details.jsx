@@ -136,7 +136,7 @@ export const Details = () => {
       </button>
 
       <input
-        type="text"
+        type="text" 
         className="search-bar"
         placeholder="Buscar por código o responsable"
         value={searchQuery}
